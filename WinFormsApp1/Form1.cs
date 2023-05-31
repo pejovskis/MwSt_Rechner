@@ -47,36 +47,37 @@ namespace WinFormsApp1
         private void btnRechne_Click(object sender, EventArgs e)
         {
 
-            try 
+            if(tbxEingabeIn.Text.Length > 1)
             {
-                mwst = Convert.ToDouble(tbxMwstIn.Text);
-                eingabe = Convert.ToDouble(tbxEingabeIn.Text);
-
-                if (rBtnBrutto.Checked == true)
+                try
                 {
-                    brutto = eingabe;
-                    netto = eingabe - ((mwst * eingabe) / 100);
+                    mwst = Convert.ToDouble(tbxMwstIn.Text);
+                    eingabe = Convert.ToDouble(tbxEingabeIn.Text);
+
+                    if (rBtnBrutto.Checked == true)
+                    {
+                        brutto = eingabe;
+                        netto = eingabe - ((mwst * eingabe) / 100);
+                    }
+                    else
+                    {
+                        netto = eingabe;
+                        brutto = eingabe + ((mwst * eingabe) / 100);
+                    }
+
+                    steuer = brutto - netto;
+
+                    tbxBruttoIn.Text = brutto.ToString("F2");
+                    tbxNettoIn.Text = netto.ToString("F2");
+                    tbxSteuerIn.Text = steuer.ToString("F2");
                 }
-                else
+                catch
                 {
-                    netto = eingabe;
-                    brutto = eingabe + ((mwst * eingabe) / 100);
+                    MessageBox.Show("Please enter valid number", "Alert", MessageBoxButtons.OK);
+                    tbxEingabeIn.Clear();
                 }
-
-                steuer = brutto - netto;
-
-                tbxBruttoIn.Text = brutto.ToString("F2");
-                tbxNettoIn.Text = netto.ToString("F2");
-                tbxSteuerIn.Text = steuer.ToString("F2");
-
-                tbxEingabeIn.Clear();
-                tbxEingabeIn.Focus();
-            } catch {
-                MessageBox.Show("Please enter valid number", "Alert", MessageBoxButtons.OK);
-                tbxEingabeIn.Clear();
             }
 
-           
         }
 
         private void btnSpeichern_Click(object sender, EventArgs e)
@@ -94,7 +95,7 @@ namespace WinFormsApp1
             tbxBruttoIn.Text = "";
             tbxNettoIn.Text = "";
             tbxSteuerIn.Text = "";
-
+            //tbxEingabeIn.Clear();
             tbxEingabeIn.Focus();
 
         }
@@ -131,29 +132,37 @@ namespace WinFormsApp1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+            string dateiSpeicherName = form2.speicherLage + ".cfg";
+
             try
             {
-                using (StreamWriter sw = new StreamWriter("test.cfg", true))
+                using (StreamWriter sw = new StreamWriter(dateiSpeicherName))
                 {
                     sw.WriteLine(brutto);
                     sw.WriteLine(netto);
                     sw.WriteLine(steuer);
                     sw.WriteLine("\n");
                 }
-            } catch (IOException)
+            }
+            catch (IOException)
             {
                 MessageBox.Show("Error Writing File", "Error", MessageBoxButtons.OK);
             }
-            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string fileName = "test.cfg";
+            Form3 form3 = new Form3();
+            form3.ShowDialog();
+            string fileName = form3.offneDateiName + ".cfg";
 
             try
             {
-                if(File.Exists(fileName))
+                if (File.Exists(fileName))
                 {
                     using (StreamReader sr = new StreamReader(fileName))
                     {
@@ -161,12 +170,14 @@ namespace WinFormsApp1
                         tbxGesamtNetto.Text = sr.ReadLine();
                         tbxGesamtSteuer.Text = sr.ReadLine();
                     }
-                } else
+                }
+                else
                 {
                     MessageBox.Show("File does not Exist", "Error", MessageBoxButtons.OK);
                 }
-                
-            } catch
+
+            }
+            catch
             {
                 MessageBox.Show("Error Opening File", "Error", MessageBoxButtons.OK);
             }

@@ -28,314 +28,314 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblBrutto = new System.Windows.Forms.Label();
-            this.lblNetto = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.btnSpeichern = new System.Windows.Forms.Button();
-            this.tbxEingabeIn = new System.Windows.Forms.TextBox();
-            this.tbxBruttoIn = new System.Windows.Forms.TextBox();
-            this.tbxSteuerIn = new System.Windows.Forms.TextBox();
-            this.tbxGesamtBrutto = new System.Windows.Forms.TextBox();
-            this.tbxGesamtNetto = new System.Windows.Forms.TextBox();
-            this.tbxGesamtSteuer = new System.Windows.Forms.TextBox();
-            this.tbxMwstIn = new System.Windows.Forms.TextBox();
-            this.tbxNettoIn = new System.Windows.Forms.TextBox();
-            this.rBtnBrutto = new System.Windows.Forms.RadioButton();
-            this.radioBtnNetto = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnRechne = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.SuspendLayout();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            lblBrutto = new Label();
+            lblNetto = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            btnReset = new Button();
+            btnSpeichern = new Button();
+            tbxEingabeIn = new TextBox();
+            tbxBruttoIn = new TextBox();
+            tbxSteuerIn = new TextBox();
+            tbxGesamtBrutto = new TextBox();
+            tbxGesamtNetto = new TextBox();
+            tbxGesamtSteuer = new TextBox();
+            tbxMwstIn = new TextBox();
+            tbxNettoIn = new TextBox();
+            rBtnBrutto = new RadioButton();
+            radioBtnNetto = new RadioButton();
+            groupBox1 = new GroupBox();
+            btnRechne = new Button();
+            button1 = new Button();
+            button2 = new Button();
+            groupBox1.SuspendLayout();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(59, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "MwSt:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            label1.AutoSize = true;
+            label1.Location = new Point(59, 49);
+            label1.Name = "label1";
+            label1.Size = new Size(40, 15);
+            label1.TabIndex = 0;
+            label1.Text = "MwSt:";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 87);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Eingabe:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            label2.AutoSize = true;
+            label2.Location = new Point(47, 87);
+            label2.Name = "label2";
+            label2.Size = new Size(52, 15);
+            label2.TabIndex = 1;
+            label2.Text = "Eingabe:";
+            label2.Click += label2_Click;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(136, 49);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "%";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            label3.AutoSize = true;
+            label3.Location = new Point(136, 49);
+            label3.Name = "label3";
+            label3.Size = new Size(17, 15);
+            label3.TabIndex = 2;
+            label3.Text = "%";
+            label3.Click += label3_Click;
             // 
             // lblBrutto
             // 
-            this.lblBrutto.AutoSize = true;
-            this.lblBrutto.Location = new System.Drawing.Point(59, 114);
-            this.lblBrutto.Name = "lblBrutto";
-            this.lblBrutto.Size = new System.Drawing.Size(46, 15);
-            this.lblBrutto.TabIndex = 3;
-            this.lblBrutto.Text = "Brutto: ";
-            this.lblBrutto.Click += new System.EventHandler(this.label4_Click);
+            lblBrutto.AutoSize = true;
+            lblBrutto.Location = new Point(59, 114);
+            lblBrutto.Name = "lblBrutto";
+            lblBrutto.Size = new Size(46, 15);
+            lblBrutto.TabIndex = 3;
+            lblBrutto.Text = "Brutto: ";
+            lblBrutto.Click += label4_Click;
             // 
             // lblNetto
             // 
-            this.lblNetto.AutoSize = true;
-            this.lblNetto.Location = new System.Drawing.Point(59, 140);
-            this.lblNetto.Name = "lblNetto";
-            this.lblNetto.Size = new System.Drawing.Size(40, 15);
-            this.lblNetto.TabIndex = 4;
-            this.lblNetto.Text = "Netto:";
+            lblNetto.AutoSize = true;
+            lblNetto.Location = new Point(59, 140);
+            lblNetto.Name = "lblNetto";
+            lblNetto.Size = new Size(40, 15);
+            lblNetto.TabIndex = 4;
+            lblNetto.Text = "Netto:";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(53, 168);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 15);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Steuer: ";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            label6.AutoSize = true;
+            label6.Location = new Point(53, 168);
+            label6.Name = "label6";
+            label6.Size = new Size(46, 15);
+            label6.TabIndex = 5;
+            label6.Text = "Steuer: ";
+            label6.Click += label6_Click;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(25, 213);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 15);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Gesamt Brutto: ";
+            label7.AutoSize = true;
+            label7.Location = new Point(25, 213);
+            label7.Name = "label7";
+            label7.Size = new Size(89, 15);
+            label7.TabIndex = 6;
+            label7.Text = "Gesamt Brutto: ";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(25, 241);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 15);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Gesamt Netto: ";
+            label8.AutoSize = true;
+            label8.Location = new Point(25, 241);
+            label8.Name = "label8";
+            label8.Size = new Size(86, 15);
+            label8.TabIndex = 7;
+            label8.Text = "Gesamt Netto: ";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(25, 270);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 15);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Gesamt Steuer:";
+            label9.AutoSize = true;
+            label9.Location = new Point(25, 270);
+            label9.Name = "label9";
+            label9.Size = new Size(86, 15);
+            label9.TabIndex = 8;
+            label9.Text = "Gesamt Steuer:";
             // 
             // btnReset
             // 
-            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReset.Location = new System.Drawing.Point(93, 357);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(135, 23);
-            this.btnReset.TabIndex = 10;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            btnReset.Cursor = Cursors.Hand;
+            btnReset.Location = new Point(93, 357);
+            btnReset.Name = "btnReset";
+            btnReset.Size = new Size(135, 23);
+            btnReset.TabIndex = 10;
+            btnReset.Text = "Reset";
+            btnReset.UseVisualStyleBackColor = true;
+            btnReset.Click += btnReset_Click;
             // 
             // btnSpeichern
             // 
-            this.btnSpeichern.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSpeichern.Location = new System.Drawing.Point(93, 386);
-            this.btnSpeichern.Name = "btnSpeichern";
-            this.btnSpeichern.Size = new System.Drawing.Size(135, 23);
-            this.btnSpeichern.TabIndex = 11;
-            this.btnSpeichern.Text = "Speichern";
-            this.btnSpeichern.UseVisualStyleBackColor = true;
-            this.btnSpeichern.Click += new System.EventHandler(this.btnSpeichern_Click);
+            btnSpeichern.Cursor = Cursors.Hand;
+            btnSpeichern.Location = new Point(93, 386);
+            btnSpeichern.Name = "btnSpeichern";
+            btnSpeichern.Size = new Size(135, 23);
+            btnSpeichern.TabIndex = 11;
+            btnSpeichern.Text = "Speichern";
+            btnSpeichern.UseVisualStyleBackColor = true;
+            btnSpeichern.Click += btnSpeichern_Click;
             // 
             // tbxEingabeIn
             // 
-            this.tbxEingabeIn.Location = new System.Drawing.Point(140, 84);
-            this.tbxEingabeIn.Name = "tbxEingabeIn";
-            this.tbxEingabeIn.Size = new System.Drawing.Size(100, 23);
-            this.tbxEingabeIn.TabIndex = 12;
+            tbxEingabeIn.Location = new Point(140, 84);
+            tbxEingabeIn.Name = "tbxEingabeIn";
+            tbxEingabeIn.Size = new Size(100, 23);
+            tbxEingabeIn.TabIndex = 12;
+            tbxEingabeIn.TextChanged += btnRechne_Click;
             // 
             // tbxBruttoIn
             // 
-            this.tbxBruttoIn.Location = new System.Drawing.Point(140, 111);
-            this.tbxBruttoIn.Name = "tbxBruttoIn";
-            this.tbxBruttoIn.ReadOnly = true;
-            this.tbxBruttoIn.Size = new System.Drawing.Size(100, 23);
-            this.tbxBruttoIn.TabIndex = 13;
+            tbxBruttoIn.Location = new Point(140, 111);
+            tbxBruttoIn.Name = "tbxBruttoIn";
+            tbxBruttoIn.ReadOnly = true;
+            tbxBruttoIn.Size = new Size(100, 23);
+            tbxBruttoIn.TabIndex = 13;
             // 
             // tbxSteuerIn
             // 
-            this.tbxSteuerIn.Location = new System.Drawing.Point(140, 165);
-            this.tbxSteuerIn.Name = "tbxSteuerIn";
-            this.tbxSteuerIn.ReadOnly = true;
-            this.tbxSteuerIn.Size = new System.Drawing.Size(100, 23);
-            this.tbxSteuerIn.TabIndex = 15;
+            tbxSteuerIn.Location = new Point(140, 165);
+            tbxSteuerIn.Name = "tbxSteuerIn";
+            tbxSteuerIn.ReadOnly = true;
+            tbxSteuerIn.Size = new Size(100, 23);
+            tbxSteuerIn.TabIndex = 15;
             // 
             // tbxGesamtBrutto
             // 
-            this.tbxGesamtBrutto.Location = new System.Drawing.Point(140, 213);
-            this.tbxGesamtBrutto.Name = "tbxGesamtBrutto";
-            this.tbxGesamtBrutto.ReadOnly = true;
-            this.tbxGesamtBrutto.Size = new System.Drawing.Size(100, 23);
-            this.tbxGesamtBrutto.TabIndex = 16;
+            tbxGesamtBrutto.Location = new Point(140, 213);
+            tbxGesamtBrutto.Name = "tbxGesamtBrutto";
+            tbxGesamtBrutto.ReadOnly = true;
+            tbxGesamtBrutto.Size = new Size(100, 23);
+            tbxGesamtBrutto.TabIndex = 16;
             // 
             // tbxGesamtNetto
             // 
-            this.tbxGesamtNetto.Location = new System.Drawing.Point(140, 238);
-            this.tbxGesamtNetto.Name = "tbxGesamtNetto";
-            this.tbxGesamtNetto.ReadOnly = true;
-            this.tbxGesamtNetto.Size = new System.Drawing.Size(100, 23);
-            this.tbxGesamtNetto.TabIndex = 17;
+            tbxGesamtNetto.Location = new Point(140, 238);
+            tbxGesamtNetto.Name = "tbxGesamtNetto";
+            tbxGesamtNetto.ReadOnly = true;
+            tbxGesamtNetto.Size = new Size(100, 23);
+            tbxGesamtNetto.TabIndex = 17;
             // 
             // tbxGesamtSteuer
             // 
-            this.tbxGesamtSteuer.Location = new System.Drawing.Point(140, 267);
-            this.tbxGesamtSteuer.Name = "tbxGesamtSteuer";
-            this.tbxGesamtSteuer.ReadOnly = true;
-            this.tbxGesamtSteuer.Size = new System.Drawing.Size(100, 23);
-            this.tbxGesamtSteuer.TabIndex = 18;
+            tbxGesamtSteuer.Location = new Point(140, 267);
+            tbxGesamtSteuer.Name = "tbxGesamtSteuer";
+            tbxGesamtSteuer.ReadOnly = true;
+            tbxGesamtSteuer.Size = new Size(100, 23);
+            tbxGesamtSteuer.TabIndex = 18;
             // 
             // tbxMwstIn
             // 
-            this.tbxMwstIn.Location = new System.Drawing.Point(105, 46);
-            this.tbxMwstIn.Name = "tbxMwstIn";
-            this.tbxMwstIn.Size = new System.Drawing.Size(25, 23);
-            this.tbxMwstIn.TabIndex = 19;
-            this.tbxMwstIn.Text = "19";
-            this.tbxMwstIn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            tbxMwstIn.Location = new Point(105, 46);
+            tbxMwstIn.Name = "tbxMwstIn";
+            tbxMwstIn.Size = new Size(25, 23);
+            tbxMwstIn.TabIndex = 19;
+            tbxMwstIn.Text = "19";
+            tbxMwstIn.TextAlign = HorizontalAlignment.Center;
             // 
             // tbxNettoIn
             // 
-            this.tbxNettoIn.Location = new System.Drawing.Point(140, 137);
-            this.tbxNettoIn.Name = "tbxNettoIn";
-            this.tbxNettoIn.ReadOnly = true;
-            this.tbxNettoIn.Size = new System.Drawing.Size(100, 23);
-            this.tbxNettoIn.TabIndex = 20;
+            tbxNettoIn.Location = new Point(140, 137);
+            tbxNettoIn.Name = "tbxNettoIn";
+            tbxNettoIn.ReadOnly = true;
+            tbxNettoIn.Size = new Size(100, 23);
+            tbxNettoIn.TabIndex = 20;
             // 
             // rBtnBrutto
             // 
-            this.rBtnBrutto.AutoSize = true;
-            this.rBtnBrutto.Checked = true;
-            this.rBtnBrutto.Location = new System.Drawing.Point(6, 23);
-            this.rBtnBrutto.Name = "rBtnBrutto";
-            this.rBtnBrutto.Size = new System.Drawing.Size(58, 19);
-            this.rBtnBrutto.TabIndex = 21;
-            this.rBtnBrutto.TabStop = true;
-            this.rBtnBrutto.Text = "Brutto";
-            this.rBtnBrutto.UseVisualStyleBackColor = true;
+            rBtnBrutto.AutoSize = true;
+            rBtnBrutto.Checked = true;
+            rBtnBrutto.Location = new Point(6, 23);
+            rBtnBrutto.Name = "rBtnBrutto";
+            rBtnBrutto.Size = new Size(58, 19);
+            rBtnBrutto.TabIndex = 21;
+            rBtnBrutto.TabStop = true;
+            rBtnBrutto.Text = "Brutto";
+            rBtnBrutto.UseVisualStyleBackColor = true;
             // 
             // radioBtnNetto
             // 
-            this.radioBtnNetto.AutoSize = true;
-            this.radioBtnNetto.Location = new System.Drawing.Point(6, 48);
-            this.radioBtnNetto.Name = "radioBtnNetto";
-            this.radioBtnNetto.Size = new System.Drawing.Size(55, 19);
-            this.radioBtnNetto.TabIndex = 22;
-            this.radioBtnNetto.TabStop = true;
-            this.radioBtnNetto.Text = "Netto";
-            this.radioBtnNetto.UseVisualStyleBackColor = true;
+            radioBtnNetto.AutoSize = true;
+            radioBtnNetto.Location = new Point(6, 48);
+            radioBtnNetto.Name = "radioBtnNetto";
+            radioBtnNetto.Size = new Size(55, 19);
+            radioBtnNetto.TabIndex = 22;
+            radioBtnNetto.TabStop = true;
+            radioBtnNetto.Text = "Netto";
+            radioBtnNetto.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.rBtnBrutto);
-            this.groupBox1.Controls.Add(this.radioBtnNetto);
-            this.groupBox1.Location = new System.Drawing.Point(246, 46);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(70, 83);
-            this.groupBox1.TabIndex = 23;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            groupBox1.Controls.Add(rBtnBrutto);
+            groupBox1.Controls.Add(radioBtnNetto);
+            groupBox1.Location = new Point(246, 46);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(70, 83);
+            groupBox1.TabIndex = 23;
+            groupBox1.TabStop = false;
+            groupBox1.Enter += groupBox1_Enter;
             // 
             // btnRechne
             // 
-            this.btnRechne.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRechne.Location = new System.Drawing.Point(93, 328);
-            this.btnRechne.Name = "btnRechne";
-            this.btnRechne.Size = new System.Drawing.Size(135, 23);
-            this.btnRechne.TabIndex = 24;
-            this.btnRechne.Text = "Rechne";
-            this.btnRechne.UseVisualStyleBackColor = true;
-            this.btnRechne.Click += new System.EventHandler(this.button1_Click);
-            this.btnRechne.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnRechne_KeyDown_1);
+            btnRechne.Cursor = Cursors.Hand;
+            btnRechne.Location = new Point(93, 328);
+            btnRechne.Name = "btnRechne";
+            btnRechne.Size = new Size(135, 23);
+            btnRechne.TabIndex = 24;
+            btnRechne.Text = "Rechne";
+            btnRechne.UseVisualStyleBackColor = true;
+            btnRechne.Click += button1_Click;
+            btnRechne.KeyDown += btnRechne_KeyDown_1;
             // 
             // button1
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(93, 415);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 23);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "Speichern .cfg";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            button1.Cursor = Cursors.Hand;
+            button1.Location = new Point(93, 415);
+            button1.Name = "button1";
+            button1.Size = new Size(135, 23);
+            button1.TabIndex = 25;
+            button1.Text = "Speichern .cfg";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
             // 
             // button2
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Location = new System.Drawing.Point(93, 444);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 23);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "Open .cfg";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Cursor = Cursors.Hand;
+            button2.Location = new Point(93, 444);
+            button2.Name = "button2";
+            button2.Size = new Size(135, 23);
+            button2.TabIndex = 26;
+            button2.Text = "Open .cfg";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form1
             // 
-            this.AcceptButton = this.btnRechne;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(320, 477);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnRechne);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.tbxNettoIn);
-            this.Controls.Add(this.tbxMwstIn);
-            this.Controls.Add(this.tbxGesamtSteuer);
-            this.Controls.Add(this.tbxGesamtNetto);
-            this.Controls.Add(this.tbxGesamtBrutto);
-            this.Controls.Add(this.tbxSteuerIn);
-            this.Controls.Add(this.tbxBruttoIn);
-            this.Controls.Add(this.tbxEingabeIn);
-            this.Controls.Add(this.btnSpeichern);
-            this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.lblNetto);
-            this.Controls.Add(this.lblBrutto);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.KeyPreview = true;
-            this.MaximizeBox = false;
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AcceptButton = btnSpeichern;
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoValidate = AutoValidate.EnablePreventFocusChange;
+            ClientSize = new Size(320, 477);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(btnRechne);
+            Controls.Add(groupBox1);
+            Controls.Add(tbxNettoIn);
+            Controls.Add(tbxMwstIn);
+            Controls.Add(tbxGesamtSteuer);
+            Controls.Add(tbxGesamtNetto);
+            Controls.Add(tbxGesamtBrutto);
+            Controls.Add(tbxSteuerIn);
+            Controls.Add(tbxBruttoIn);
+            Controls.Add(tbxEingabeIn);
+            Controls.Add(btnSpeichern);
+            Controls.Add(btnReset);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(lblNetto);
+            Controls.Add(lblBrutto);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            KeyPreview = true;
+            MaximizeBox = false;
+            Name = "Form1";
+            Text = "Form1";
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
