@@ -47,7 +47,7 @@ namespace WinFormsApp1
         private void btnRechne_Click(object sender, EventArgs e)
         {
 
-            if(tbxEingabeIn.Text.Length > 1)
+            if (tbxEingabeIn.Text.Length > 1)
             {
                 try
                 {
